@@ -7,6 +7,10 @@
   background: #07110e;
   color: #f3f7f4;
   font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -16,4 +20,64 @@
 body {
   margin: 0;
   min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% -20rem, rgb(43 94 68 / 20%), transparent 58rem),
+    #07110e;
+}
+
+::selection {
+  background: rgb(110 231 183 / 30%);
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #d9f99d;
+  outline-offset: 3px;
+}
+
+.home-hero {
+  background:
+    radial-gradient(ellipse at 83% 30%, rgb(120 160 60 / 11%), transparent 32rem),
+    linear-gradient(128deg, #102019 0%, #0c1712 47%, #0a1410 100%);
+}
+
+.home-hero-grid {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.3;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 3.5%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 3.5%) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at 78% 45%, #000 0%, transparent 70%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

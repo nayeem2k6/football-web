@@ -1,0 +1,166 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/leagues/[leagueId]/standings",
+      "regex": "^/leagues/([^/]+?)/standings(?:/)?$",
+      "routeKeys": {
+        "nxtPleagueId": "nxtPleagueId"
+      },
+      "namedRegex": "^/leagues/(?<nxtPleagueId>[^/]+?)/standings(?:/)?$"
+    },
+    {
+      "page": "/news/[slug]",
+      "regex": "^/news/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/news/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/players/[playerId]",
+      "regex": "^/players/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPplayerId": "nxtPplayerId"
+      },
+      "namedRegex": "^/players/(?<nxtPplayerId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/teams/[teamId]",
+      "regex": "^/teams/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPteamId": "nxtPteamId"
+      },
+      "namedRegex": "^/teams/(?<nxtPteamId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/users/[username]",
+      "regex": "^/users/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPusername": "nxtPusername"
+      },
+      "namedRegex": "^/users/(?<nxtPusername>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/creator",
+      "regex": "^/creator(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/creator(?:/)?$"
+    },
+    {
+      "page": "/creator/monetization",
+      "regex": "^/creator/monetization(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/creator/monetization(?:/)?$"
+    },
+    {
+      "page": "/fixtures",
+      "regex": "^/fixtures(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fixtures(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/news",
+      "regex": "^/news(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/news(?:/)?$"
+    },
+    {
+      "page": "/news/editor",
+      "regex": "^/news/editor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/news/editor(?:/)?$"
+    },
+    {
+      "page": "/profile",
+      "regex": "^/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile(?:/)?$"
+    },
+    {
+      "page": "/scores",
+      "regex": "^/scores(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/scores(?:/)?$"
+    },
+    {
+      "page": "/teams",
+      "regex": "^/teams(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/teams(?:/)?$"
+    },
+    {
+      "page": "/transfers",
+      "regex": "^/transfers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/transfers(?:/)?$"
+    },
+    {
+      "page": "/videos",
+      "regex": "^/videos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/videos(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

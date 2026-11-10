@@ -1,3 +1,8 @@
 {
+  "/news/page": "app/news/page.js",
+  "/creator/page": "app/creator/page.js",
+  "/transfers/page": "app/transfers/page.js",
+  "/videos/page": "app/videos/page.js",
+  "/admin/page": "app/admin/page.js",
   "/page": "app/page.js"
 }
