@@ -1,8 +1,0 @@
-{
-  "/videos/page": "app/videos/page.js",
-  "/news/page": "app/news/page.js",
-  "/creator/page": "app/creator/page.js",
-  "/creator/monetization/page": "app/creator/monetization/page.js",
-  "/scores/page": "app/scores/page.js",
-  "/page": "app/page.js"
-}

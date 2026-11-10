@@ -7,3 +7,5 @@ coverage/
 !.env.example
 .vercel/
 *.log
+.next-preview-3000/
+*.tsbuildinfo
