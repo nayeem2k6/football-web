@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerGroups = [
@@ -95,6 +96,37 @@ export function SiteFooter() {
             </ul>
           </nav>
         </div>
+        <section
+          aria-label="Developer credit"
+          className="mt-10 flex flex-col gap-5 rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 sm:mt-12 sm:flex-row sm:items-center sm:gap-6 sm:p-6"
+        >
+          <div className="relative h-20 w-20 shrink-0">
+            <span
+              aria-hidden="true"
+              className="absolute -inset-1 rounded-full bg-lime-300/20 blur-md"
+            />
+            <Image
+              alt="Nayeem Babu"
+              className="relative h-20 w-20 rounded-full border-2 border-lime-200/50 object-cover object-center shadow-[0_0_24px_rgba(190,242,100,0.12)]"
+              height={80}
+              src="https://i.ibb.co.com/zhmsV8sw/IMG-20261021-113552.jpg"
+              unoptimized
+              width={80}
+            />
+          </div>
+          <div className="min-w-0">
+            <p className="text-sm font-bold text-white sm:text-base">
+              Designed &amp; Developed by{" "}
+              <span className="text-lime-200">Nayeem Babu</span>
+            </p>
+            <p className="mt-1 text-xs font-semibold tracking-wide text-white/60">
+              Full-Stack Web Developer (MERN)
+            </p>
+            <p className="mt-2 max-w-2xl text-xs leading-5 text-white/40 sm:text-sm">
+              Building modern, responsive and user-friendly web applications.
+            </p>
+          </div>
+        </section>
         <div className="mt-10 flex flex-col gap-3 border-t border-white/[0.08] pt-5 text-[11px] leading-5 text-white/35 sm:mt-12 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Football+. Made for the love of the game.</p>
           <p>Football data supplied by API-FOOTBALL. Match times shown in UTC.</p>

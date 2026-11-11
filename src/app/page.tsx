@@ -108,12 +108,13 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[31rem] lg:ml-auto">
+          <div className="relative isolate mx-auto w-full max-w-[31rem] lg:ml-auto">
+            <div aria-hidden="true" className="matchday-pitch" />
             <div
               aria-hidden="true"
               className="absolute -inset-5 rounded-[2rem] border border-lime-200/[0.08] sm:-inset-7"
             />
-            <div className="relative overflow-hidden rounded-[1.4rem] border border-white/[0.12] bg-[#0b1713]/90 shadow-[0_24px_100px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:rounded-[1.7rem]">
+            <div className="relative z-10 overflow-hidden rounded-[1.4rem] border border-white/[0.12] bg-[#0b1713]/90 shadow-[0_24px_100px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:rounded-[1.7rem]">
               <div className="flex items-center justify-between border-b border-white/[0.08] px-5 py-4 sm:px-6">
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">

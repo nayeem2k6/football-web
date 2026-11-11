@@ -20,6 +20,12 @@ export function SiteHeader() {
           className="inline-flex min-h-10 items-center text-lg font-black tracking-[-0.04em] text-white sm:text-xl"
           href="/"
         >
+          <span
+            aria-hidden="true"
+            className="mr-2.5 flex h-7 w-7 items-center justify-center rounded-full border border-lime-200/30 bg-lime-200/[0.08] sm:h-8 sm:w-8"
+          >
+            <span className="h-2.5 w-2.5 rounded-full bg-lime-300 shadow-[0_0_14px_rgba(190,242,100,0.7)] sm:h-3 sm:w-3" />
+          </span>
           FOOTBALL<span className="text-lime-300">+</span>
         </Link>
         <div className="flex items-center gap-2 sm:gap-3">
